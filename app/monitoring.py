@@ -9,7 +9,6 @@ from prometheus_fastapi_instrumentator.metrics import Info
 NAMESPACE = os.environ.get("METRICS_NAMESPACE", "fastapi")
 SUBSYSTEM = os.environ.get("METRICS_SUBSYSTEM", "model")
 
-
 instrumentator = Instrumentator(
     should_group_status_codes=True,
     should_ignore_untemplated=True,
